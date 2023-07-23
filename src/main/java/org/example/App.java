@@ -8,6 +8,8 @@ public class App
 {
     public static void main(String[] args) {
         // Создаем SessionFactory с помощью hibernate.cfg.xml
+        // SessionFactory - это фабрика сессий, которая создается на основе настроек,
+        // указанных в файле конфигурации hibernate.cfg.xml.
         SessionFactory sessionFactory = new Configuration()
                 .configure()
                 .buildSessionFactory();
